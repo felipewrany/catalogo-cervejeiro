@@ -8,10 +8,22 @@ app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/index", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index");
-  });
+});
 
-  app.post("/cadastro", (req, res) => {
-  });
+app.get("/casdastro", (req, res) => {
+    res.render("cadastro");
+});
+
+app.get("/editar", (req, res) => {
+    res.render("editar");
+});
+
+app.get("/detalhes", (req, res) => {
+    res.render("detalhes");
+});
+
+app.post("/cadastro", (req, res) => {
+});
   
