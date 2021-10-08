@@ -24,6 +24,10 @@ app.get("/detalhes", (req, res) => {
     res.render("detalhes");
 });
 
+app.get("/sobre", (req, res) => {
+    res.render("sobre");
+});
+
 app.post("/cadastro", (req, res) => {
 });
   
