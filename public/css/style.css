@@ -9,7 +9,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin-bottom:auto;
-    padding: 0.5rem;
+    padding: 1rem;
     /* left: 0;
     top: 0; */
     width: 100%;
@@ -22,13 +22,14 @@ nav div {
     align-items: center;
 }
 
-nav a {
-    text-decoration: none;
+nav div a {
+    color:white
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    align-items: center;
     /* position: fixed; */
     /* margin-bottom:auto; */
     justify-content: space-between;
@@ -40,6 +41,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
+    color:white
 }
 
 body {
