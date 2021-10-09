@@ -11,6 +11,10 @@ nav {
     display: flex;
 }
 
+#nav-logo {
+    text-decoration: none;
+}
+
 #nav-menu {
     display: flex;
     align-items: center;
@@ -23,10 +27,6 @@ nav {
     left: 0;
     top: 0;
     width: 100%;
-}
-
-#nav-logo h1 {
-    text-decoration: none;
 }
 
 #nav-menu a {
