@@ -4,7 +4,7 @@
 }
 
 nav {
-    background-color: #3d1308;
+    /* background-color: #3d1308;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,7 +12,15 @@ nav {
     padding: 1rem;
     width: 100%;
     position: fixed;
+    z-index: 10; */
+    background-color: #3d1308;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
     z-index: 10;
+    top: 0;
 }
 
 .nav-left {
@@ -28,8 +36,8 @@ nav {
 .nav-right {
     /* list-style: none; */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-between; */
 }
 
 .nav-right a {
@@ -37,9 +45,9 @@ nav {
     color: #dcc48e;
 }
 
-/* body {
+body {
     background-color: #dcc48e;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-} */
+}
