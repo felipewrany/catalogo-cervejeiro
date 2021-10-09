@@ -22,13 +22,13 @@ nav ul {
     position: fixed;
     margin-bottom:auto;
     justify-content: space-between;
-    padding: 0.5rem;
+    /* padding: 0.5rem;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100%; */
 }
 
-#nav-menu a {
+nav ul li a {
     text-decoration: none;
 }
 
