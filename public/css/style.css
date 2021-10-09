@@ -28,6 +28,8 @@ nav div a {
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
 
 nav ul li a {
