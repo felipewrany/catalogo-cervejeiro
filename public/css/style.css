@@ -15,7 +15,7 @@ nav {
     text-decoration: none;
 }
 
-#nav-menu {
+nav ul {
     display: flex;
     list-style: none;
     align-items: center;
