@@ -45,7 +45,7 @@ body {
     min-height: 100vh;
 }
 
-#cadastro {
+section#cadastro {
     padding: 3rem;
     display: flex;
     justify-content: center;
