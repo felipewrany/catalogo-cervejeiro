@@ -6,7 +6,16 @@
 header {
     background-color: #211103;
 }
-#nav-menu {
+.nav-menu {
+    align-items: center;
+    justify-content:left;
+    background-color: #3d1308;
+    position: fixed;
+    margin-bottom:auto;
+    padding: 0.5rem;
+    left: 0;
+    top: 0;
+    width: 100%;
     display: flex;
     text-decoration: none;
 }
