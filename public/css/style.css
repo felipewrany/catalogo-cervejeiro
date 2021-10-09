@@ -15,24 +15,24 @@ nav {
     z-index: 10;
 }
 
-nav div {
+#nav-left {
     display: flex;
     align-items: center;
 }
 
-nav div a {
+#nav-left a {
     color: #dcc48e;
     text-decoration: none;
 }
 
-nav ul {
+#nav-right {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav ul li a {
+#nav-right a {
     text-decoration: none;
     color: #dcc48e;
 }
