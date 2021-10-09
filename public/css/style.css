@@ -8,10 +8,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    margin-bottom:auto;
+    padding: 0.5rem;
+    /* left: 0;
+    top: 0; */
     width: 100%;
+    position: fixed;
     z-index: 10;
-    top: 0;
 }
 
 nav div {
@@ -28,7 +31,7 @@ nav ul {
     display: flex;
     /* position: fixed; */
     /* margin-bottom:auto; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
     /* padding: 0.5rem;
     left: 0;
     top: 0;
