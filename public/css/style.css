@@ -10,8 +10,6 @@ nav {
     justify-content: space-between;
     margin-bottom:auto;
     padding: 1rem;
-    /* left: 0;
-    top: 0; */
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -20,29 +18,21 @@ nav {
 nav div {
     display: flex;
     align-items: center;
-    text-decoration: none;
 }
 
 nav div a {
-    color:white
+    color: #dcc48e;
+    text-decoration: none;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    /* align-items: center; */
-    /* position: fixed; */
-    /* margin-bottom:auto; */
-    /* justify-content: space-between; */
-    /* padding: 0.5rem;
-    left: 0;
-    top: 0;
-    width: 100%; */
 }
 
 nav ul li a {
     text-decoration: none;
-    color:white
+    color: #dcc48e;
 }
 
 body {
