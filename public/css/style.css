@@ -6,8 +6,7 @@
 header {
     background-color: #211103;
 }
-<<<<<<< HEAD
-.nav-menu {
+#nav-menu {
     align-items: center;
     justify-content:left;
     background-color: #3d1308;
@@ -17,14 +16,13 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-=======
+}
 
 #nav-logo h1 {
     text-decoration: none;
 }
 
 #nav-menu {
->>>>>>> 736f9085952bcfb8d76a77de3f8efc66a6153341
     display: flex;
     align-items: center;
     justify-content: space-between;
