@@ -24,6 +24,7 @@ nav {
 .nav-left a {
     color: #dcc48e;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-right {
@@ -43,3 +44,14 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
+section#cadastrar {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #3d1308;
+    margin: 0 20rem 10rem 20rem;
+    box-shadow: 0 0 1rem #00000060;
+    /* border-radius: 1rem; */
+  }
