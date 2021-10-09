@@ -5,13 +5,14 @@
 
 nav {
     display: flex;
-    text-decoration: none;
     background-color: #3d1308;
+    align-items: center;
     justify-content: space-between;
+    position: fixed;
 
 }
 
-#nav-logo {
+nav a {
     text-decoration: none;
 }
 
@@ -19,8 +20,8 @@ nav ul {
     display: flex;
     list-style: none;
     align-items: center;
-    position: fixed;
-    margin-bottom:auto;
+    /* position: fixed; */
+    /* margin-bottom:auto; */
     justify-content: space-between;
     /* padding: 0.5rem;
     left: 0;
