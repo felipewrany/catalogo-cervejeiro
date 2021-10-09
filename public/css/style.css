@@ -6,8 +6,18 @@
 header {
     background-color: #211103;
 }
+
+#nav-logo h1 {
+    text-decoration: none;
+}
+
 #nav-menu {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-menu a {
     text-decoration: none;
 }
 
