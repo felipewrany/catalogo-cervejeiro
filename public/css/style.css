@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-header {
-    background-color: #211103;
-}
-
 nav {
     display: flex;
+    text-decoration: none;
+    background-color: #3d1308;
+    justify-content: space-between;
+
 }
 
 #nav-logo {
@@ -17,9 +17,8 @@ nav {
 
 #nav-menu {
     display: flex;
+    list-style: none;
     align-items: center;
-    justify-content:left;
-    background-color: #3d1308;
     position: fixed;
     margin-bottom:auto;
     justify-content: space-between;
