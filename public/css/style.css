@@ -46,7 +46,8 @@ nav {
 .nav-right a {
     text-decoration: none;
     color: #dcc48e;
-    padding: 1rem;
+    left: 1rem;
+    right: 1rem;
 }
 
 body {
