@@ -41,13 +41,12 @@ nav {
     /* align-items: center;
     justify-content: space-between; */
     padding: 1rem;
+    gap: 0.5rem 1rem;
 }
 
 .nav-right a {
     text-decoration: none;
     color: #dcc48e;
-    left: 1rem;
-    right: 1rem;
 }
 
 body {
