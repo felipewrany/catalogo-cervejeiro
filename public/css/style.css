@@ -20,6 +20,7 @@ nav {
 nav div {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 nav div a {
@@ -29,10 +30,10 @@ nav div a {
 nav ul {
     list-style: none;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* position: fixed; */
     /* margin-bottom:auto; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* padding: 0.5rem;
     left: 0;
     top: 0;
