@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 nav {
@@ -37,6 +38,9 @@ nav {
     text-decoration: none;
     color: #ce4b27;
 }
+.nav-right a:hover {
+    color: #dcc48e;
+}
 
 body {
     background-color: #dcc48e;
@@ -54,6 +58,7 @@ div#header-cadastro h1 {
     color: #ce4b27;
     font-size: 4rem;
     text-align: center;
+    font-family: 'Bebas Neue', cursive;
 }
 
 section#cadastro {
