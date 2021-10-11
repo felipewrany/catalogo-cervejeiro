@@ -35,7 +35,7 @@ nav {
 
 .nav-right a {
     text-decoration: none;
-    color: #dcc48e;
+    color: #ce4b27;
 }
 
 body {
@@ -64,6 +64,9 @@ section#cadastro {
     background-color: #3d1308;
     margin: 0 20rem 10rem 20rem;
     box-shadow: 0 0 1rem #00000060;
+    color: #ce4b27;
+    font-weight: bold;
+    font-size: large;
     /* border-radius: 1rem; */
 }
 
@@ -80,4 +83,14 @@ section#cadastro form div input {
     margin-bottom: 1rem;
     outline: none;
     /* border: 0.1rem solid #ccc; */
-  }
+}
+
+section#cadastro form div select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    /* border: 0.1rem solid #ccc; */
+}
