@@ -32,7 +32,7 @@ app.get("/cervejas/:id", async (req, res) => {
   const cerveja = await Cerveja.findByPk(req.params.id);
 
   res.render("detalhes", {
-    cerveja,
+    cervejas,
   });
 });
 
@@ -52,7 +52,7 @@ app.post("/cadastro", async (req, res) => {
     });
   
     res.render("cadastro", {
-      cerveja,
+      cervejas,
     });
   });
 
