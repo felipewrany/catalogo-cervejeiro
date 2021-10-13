@@ -17,11 +17,11 @@ const Cerveja = database.define("cervejas", {
     allowNull: false,
   },
   ibu: {
-    type: Sequelize.STRING,
+    type: Sequelize.INTEGER,
     allowNull: false,
   },
   teoralcoolico: {
-    type: Sequelize.STRING,
+    type: Sequelize.DECIMAL,
     allowNull: false,
   },
   fabricante: {
