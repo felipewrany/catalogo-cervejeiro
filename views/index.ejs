@@ -20,5 +20,23 @@
             </div>
         </nav>
     </header>
+    <section>
+        <article id="lista">
+            <h3>LISTA DE CERVEJAS</h3>
+
+            <% cervejas.forEach(item => { %>
+                <div>
+                    <ul>
+                        <li><%= item.id %></li>
+                        <li><%= item.nome %></li>
+                        <li><%= item.ibu %></li>
+                        <li><%= item.teoralcoolico %></li>
+                        <li><%= item.fabricante %></li>
+                        <img src="<%=  %>" width=200>
+                    </ul>
+                </div>
+            <% }) %> 
+        </article>
+    </section>
 </body>
 </html>
