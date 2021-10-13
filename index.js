@@ -32,7 +32,7 @@ app.get("/cervejas/:id", async (req, res) => {
   const cerveja = await Cerveja.findByPk(req.params.id);
 
   res.render("detalhes", {
-    cervejas,
+    cerveja,
   });
 });
 
