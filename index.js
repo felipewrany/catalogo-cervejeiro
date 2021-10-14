@@ -28,7 +28,7 @@ app.get("/editar", (req, res) => {
     res.render("editar");
 });
 
-app.get("/cervejas/:id", async (req, res) => {
+app.get("/detalhes/:id", async (req, res) => {
   const cerveja = await Cerveja.findByPk(req.params.id);
 
   res.render("detalhes", {
@@ -41,7 +41,7 @@ app.get("/sobre", (req, res) => {
 });
 
 app.post("/cadastro", async (req, res) => {
-    const { nome, tipo, ibu,teoralcoolico,fabricante } = req.body;
+    const { nome, tipo, ibu, teoralcoolico, fabricante } = req.body;
     
     const cerveja = await Cerveja.create({
       nome,
@@ -51,7 +51,7 @@ app.post("/cadastro", async (req, res) => {
       fabricante
     });
   
-    res.render("cadastro", {
+    res.render("index", {
       cervejas,
     });
   });
