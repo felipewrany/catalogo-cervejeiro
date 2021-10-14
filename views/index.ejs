@@ -25,7 +25,7 @@
             <h3>LISTA DE CERVEJAS</h3>
 
             <% cervejas.forEach(item => { %>
-                <div>
+                <div class="card" href="/detalhes/<%= item.id %>">
                     <ul>
                         <li><%= item.nome %></li>
                         <li><%= item.tipo %></li>
