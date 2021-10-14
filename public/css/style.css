@@ -99,3 +99,12 @@ section#cadastro form div select {
     outline: none;
     /* border: 0.1rem solid #ccc; */
 }
+
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+}
