@@ -19,7 +19,41 @@
                 <a href="/sobre">Sobre</a>
             </div>
         </nav>
+        <div id="header-editar">
+            <h1>Editar</h1>
+        </div>
     </header>
-    
+    <section id="editar">
+        <form action="/editar/<%= cerveja.id%>" method="POST">
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" value="<%= cerveja.nome %> required>
+            </div>
+            <div>
+                <label for="tipo">Tipo: </label>
+                <select name="tipo" required>
+                    <option value="a">IPA</option>
+                    <option value="b">Lager</option>
+                    <option value="c">Weiss</option>
+                    <option value="d">Ale</option>
+                    <option value="e">Pilsen</option>
+                    <option value="f">Outro</option>
+                  </select>
+            </div>
+            <div>
+                <label for="ibu">IBU: </label>
+                <input type="text" name="ibu" id="ibu" value="<%= cerveja.ibu %>" required>
+            </div>
+            <div>
+                <label for="teor alcoolico">Teor alcoólico: </label>
+                <input type="text" name="teor alcoolico" id="teor alcoolico" value="<%= cerveja.teoralcoolico %> required>
+            </div>
+            <div>
+                <label for="fabricante">Fabricante: </label>
+                <input type="text" name="fabricante" id="fabricante" value="<%= cerveja.fabricante %> required>
+            </div>
+            <button type="submit">Editar</button>
+        </form>
+    </section>
 </body>
 </html>

@@ -1,15 +1,15 @@
 const express = require("express");
 const path = require("path");
-require('dotenv').config()
-
-
 const app = express();
 const port = process.env.PORT || 3000;
-const Cerveja = require("./models/cervejas");
+
+require('dotenv').config()
 
 app.set("view engine", "ejs");
-
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded());
+
+const Cerveja = require("./models/cervejas");
 
 app.get("/", async (req, res) => {
     const cervejas = await Cerveja.findAll();
@@ -24,8 +24,11 @@ app.get("/cadastro", (req, res) => {
     res.render("cadastro");
 });
 
-app.get("/editar", (req, res) => {
-    res.render("editar");
+app.get("/editar/:id", async (req, res) => {
+  const cerveja = await Cerveja.findByPk(req.params.id);
+  res.render("editar", {
+    cerveja
+  });
 });
 
 app.get("/detalhes/:id", async (req, res) => {
@@ -56,6 +59,24 @@ app.post("/cadastro", async (req, res) => {
     });
   });
 
+app.post("/editar/:id", async (req, res) => {
+  const cerveja = await Cerveja.findByPk(req.params.id);
+
+  const { nome, tipo, ibu, teoralcoolico, fabricante } = req.body;
+
+  cerveja.nome = nome;
+  cerveja.tipo = tipo;
+  cerveja.ibu = ibu;
+  cerveja.teoralcoolico = teoralcoolico;
+  cerveja.fabricante = fabricante;
+
+  const cervejaEditada = await cerveja.save();
+
+  res.render("editar", {
+    cerveja: cervejaEditada
+
+  });
+});
 
 app.listen(port, () =>
   console.log(`Servidor rodando em http://localhost:${port}`)
