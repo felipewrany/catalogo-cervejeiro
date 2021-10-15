@@ -26,12 +26,12 @@
 
             <% cervejas.forEach(item => { %>
                 <div class="card" href="/detalhes/<%= item.id %>">
-                    <ul>
-                        <li><%= item.nome %></li>
-                        <li><%= item.tipo %></li>
-                       
-                        <img src="<%=  %>" width=200>
-                    </ul>
+                        <h1>
+                            <%= item.nome %>
+                        </h1>
+                        <h3>
+                            <%= item.tipo %>
+                        </h3>
                 </div>
             <% }) %> 
         </article>
