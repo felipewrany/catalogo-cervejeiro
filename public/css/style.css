@@ -102,9 +102,9 @@ section#cadastro form div select {
 
 #lista {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .card {
+    padding: 2rem;
     display: flex;
 }
