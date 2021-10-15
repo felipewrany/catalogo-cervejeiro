@@ -57,7 +57,7 @@ app.post("/cadastro", async (req, res) => {
     res.render("index", {
       cervejas,
     });
-  });
+});
 
 app.post("/editar/:id", async (req, res) => {
   const cerveja = await Cerveja.findByPk(req.params.id);
@@ -76,6 +76,15 @@ app.post("/editar/:id", async (req, res) => {
     cerveja: cervejaEditada
 
   });
+});
+
+app.get("/deletar/:id", async (req, res) => {  
+  const cerveja = await Cerveja.findByPk(req.params.id);
+
+  cerveja.destroy();
+
+  res.redirect("/");
+  
 });
 
 app.listen(port, () =>
