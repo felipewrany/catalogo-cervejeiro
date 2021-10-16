@@ -54,9 +54,7 @@ app.post("/cadastro", async (req, res) => {
       fabricante
     });
   
-    res.render("index", {
-      cervejas,
-    });
+    res.redirect("/");
 });
 
 app.post("/editar/:id", async (req, res) => {
@@ -72,7 +70,7 @@ app.post("/editar/:id", async (req, res) => {
 
   const cervejaEditada = await cerveja.save();
 
-  res.render("editar", {
+  res.render("index", {
     cerveja: cervejaEditada
 
   });
