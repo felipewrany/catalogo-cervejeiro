@@ -19,6 +19,12 @@
                 <a href="/sobre">Sobre</a>
             </div>
         </nav>
+        <% if(message != "") {  %>
+            <section id="message">
+                <p><%= message %></p> <span id="close">&times;</span>
+            </section>
+        <% }  %>
+    
     </header>
     <section>
         <div class="header">
@@ -28,6 +34,20 @@
         <article id="lista">
             <% cervejas.forEach(item => { %>
                 <a class="card" href="/detalhes/<%= item.id %>">
+                    <% if(item.tipo == "IPA") {  %>
+                        <img src=/img/IPA.png>
+                    <% } else if(item.tipo == "Ale") {  %>
+                        <img src=/img/Ale.png>
+                    <% } else if(item.tipo == "Lager") {  %>
+                        <img src=/img/Lager.png>
+                    <% } else if(item.tipo == "Pilsen") {  %>
+                        <img src=/img/Pilsen.png>
+                    <% } else if(item.tipo == "Weiss") {  %>
+                        <img src=/img/Pilsen.png>
+                    <% } else if(item.tipo == "Outro") { %>
+                        <img src=/img/Outro.png>
+                    <% } %>
+
                     <h1>
                         <%= item.nome %>
                     </h1>
@@ -38,5 +58,6 @@
             <% }) %> 
         </article>
     </section>
+    <script src="/js/script.js"></script>
 </body>
 </html>

@@ -135,6 +135,10 @@ a.card {
     text-align: center;
 }
 
+.card img {
+    width: 6rem;
+}
+
 .detalhes {
     margin: 0 20rem 0 20rem;
     display: flex;
@@ -147,6 +151,9 @@ a.card {
     border-radius: 1rem;
     padding: 3rem;
     text-align: center
+}
+.detalhes img {
+    width: 15rem;
 }
 
 .info-cerveja div {
@@ -174,3 +181,32 @@ a.card {
     text-decoration: none;
     padding: 2rem
 }
+
+section#message {
+    padding: 0.6rem;
+    background-color: #ce4b27;
+    color: #ffffff;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }

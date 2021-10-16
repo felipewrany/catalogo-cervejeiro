@@ -19,12 +19,25 @@
                 <a href="/sobre">Sobre</a>
             </div>
         </nav>
+    
         <div class="header">
             <h1><%= cerveja.nome %></h1>
         </div>
     </header>
     <section class="detalhes">
-        <img id="imagem" src="<%=  %>">
+        <% if(cerveja.tipo == "IPA") {  %>
+            <img src=/img/IPA.png>
+        <% } else if(cerveja.tipo == "Ale") {  %>
+            <img src=/img/Ale.png>
+        <% } else if(cerveja.tipo == "Lager") {  %>
+            <img src=/img/Lager.png>
+        <% } else if(cerveja.tipo == "Pilsen") {  %>
+            <img src=/img/Pilsen.png>
+        <% } else if(cerveja.tipo == "Weiss") {  %>
+            <img src=/img/Pilsen.png>
+        <% } else if(cerveja.tipo == "Outro") { %>
+            <img src=/img/Outro.png>
+        <% } %>
         <div class="info-cerveja">
             <div>
                 Tipo:
@@ -52,7 +65,6 @@
             </div>
         </div>
     </section>
-
     <script src="/js/script.js"></script>
 </body>
 </html>
