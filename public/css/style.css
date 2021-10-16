@@ -146,6 +146,7 @@ a.card {
     font-size: 2rem;
     border-radius: 1rem;
     padding: 3rem;
+    text-align: center
 }
 
 .info-cerveja div {
@@ -169,5 +170,5 @@ a.card {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 2rem;
+    padding: 2rem
 }
