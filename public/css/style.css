@@ -52,13 +52,23 @@ body {
 .header {
     padding-top: 7rem;
     padding-bottom: 3rem;
-}
-
-.header h1 {
     color: #ce4b27;
     font-size: 4rem;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
+}
+
+.header h1{
+    color: #ce4b27;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header h3{
+    color: black;
+    font-size:3rem;
+    font-family: 'Bebas Neue', cursive
 }
 
 .form-beer {

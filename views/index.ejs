@@ -21,9 +21,11 @@
         </nav>
     </header>
     <section>
+        <div class="header">
+            <h1>Bem-vindo ao catálogo cervejeiro!</h1>
+            <h3>Escolha sua cerveja</h3>
+        </div>
         <article id="lista">
-            <h3>LISTA DE CERVEJAS</h3>
-
             <% cervejas.forEach(item => { %>
                 <div class="card" href="/detalhes/<%= item.id %>">
                         <h1>
