@@ -129,11 +129,16 @@ a.card {
     border-radius: 1rem;
     padding: 1rem;
     text-decoration: none;
+    transition: transform 0.5s;
     padding: 2rem;
     color: #ffffff;
     background-color: #211103;
     text-align: center;
 }
+
+a.card:hover {
+    transform: scale(1.1);
+  }
 
 .card img {
     width: 6rem;
