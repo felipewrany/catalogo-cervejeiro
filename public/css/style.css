@@ -117,4 +117,6 @@ body {
 .card {
     padding: 2rem;
     display: flex;
+    color: #ffffff;
+    background-color: #211103;
 }
