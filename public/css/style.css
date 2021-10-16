@@ -135,6 +135,10 @@ a.card {
     text-align: center;
 }
 
+.card img {
+    width: 6rem;
+}
+
 .detalhes {
     margin: 0 20rem 0 20rem;
     display: flex;
@@ -147,6 +151,9 @@ a.card {
     border-radius: 1rem;
     padding: 3rem;
     text-align: center
+}
+.detalhes img {
+    width: 6rem;
 }
 
 .info-cerveja div {
