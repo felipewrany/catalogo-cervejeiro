@@ -152,6 +152,8 @@ a.card {
 .info-cerveja div {
     text-transform: uppercase;
     font-weight: bold;
+    text-align: left;
+    padding-top: 1.3rem;
 }
 
 .info-cerveja div spam {
