@@ -9,25 +9,33 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded());
 
+//Para informar o usuário
+let message = "";
+
 const Cerveja = require("./models/cervejas");
 
 app.get("/", async (req, res) => {
     const cervejas = await Cerveja.findAll();
+    setTimeout(() => {
+      message = "";
+    }, 500);
   
     res.render("index", {
-      cervejas,
+      cervejas, message
     });
   });
   
 
 app.get("/cadastro", (req, res) => {
-    res.render("cadastro");
+    res.render("cadastro", {
+    message
+  });
 });
 
 app.get("/editar/:id", async (req, res) => {
   const cerveja = await Cerveja.findByPk(req.params.id);
   res.render("editar", {
-    cerveja
+    cerveja, message
   });
 });
 
@@ -53,7 +61,7 @@ app.post("/cadastro", async (req, res) => {
       teoralcoolico,
       fabricante
     });
-  
+    message="Cerveja cadastrada com sucesso!";
     res.redirect("/");
 });
 
@@ -69,15 +77,16 @@ app.post("/editar/:id", async (req, res) => {
   cerveja.fabricante = fabricante;
 
   const cervejaEditada = await cerveja.save();
+  message="Cerveja editada com sucesso!";
 
   res.redirect("/");  
-
 });
 
 app.post("/deletar/:id", async (req, res) => {  
   const cerveja = await Cerveja.findByPk(req.params.id);
 
   await cerveja.destroy();
+  message="Cerveja apagada com sucesso!";
 
   res.redirect("/");
   

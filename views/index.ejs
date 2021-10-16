@@ -19,6 +19,12 @@
                 <a href="/sobre">Sobre</a>
             </div>
         </nav>
+        <% if(message != "") {  %>
+            <section id="message">
+                <p><%= message %></p> <span id="close">&times;</span>
+            </section>
+        <% }  %>
+    
     </header>
     <section>
         <div class="header">
@@ -38,5 +44,6 @@
             <% }) %> 
         </article>
     </section>
+    <script src="/js/script.js"></script>
 </body>
 </html>
