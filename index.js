@@ -78,7 +78,7 @@ app.post("/editar/:id", async (req, res) => {
   });
 });
 
-app.get("/deletar/:id", async (req, res) => {  
+app.post("/deletar/:id", async (req, res) => {  
   const cerveja = await Cerveja.findByPk(req.params.id);
 
   cerveja.destroy();
