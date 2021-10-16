@@ -132,6 +132,7 @@ a.card {
     padding: 2rem;
     color: #ffffff;
     background-color: #211103;
+    text-align: center;
 }
 .detalhes {
     display: flex;
