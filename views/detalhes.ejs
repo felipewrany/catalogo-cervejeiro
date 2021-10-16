@@ -48,9 +48,9 @@
                 <a href="/editar/<%= cerveja.id %>">  
                     <button>Editar</button>
                 </a>
-                <a href="/deletar/<%= cerveja.id %>">  
-                    <button>Deletar</button>  
-                </a>
+                <form action="/deletar/<%= cerveja.id %>" method="POST">  
+                    <button type="submit">Deletar</button>
+                </form>
             </div>
         </div>
     </section>
