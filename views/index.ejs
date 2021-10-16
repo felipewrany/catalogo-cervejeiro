@@ -27,14 +27,14 @@
         </div>
         <article id="lista">
             <% cervejas.forEach(item => { %>
-                <div class="card" href="/detalhes/<%= item.id %>">
-                        <h1>
-                            <%= item.nome %>
-                        </h1>
-                        <h3>
-                            <%= item.tipo %>
-                        </h3>
-                </div>
+                <a class="card" href="/detalhes/<%= item.id %>">
+                    <h1>
+                        <%= item.nome %>
+                    </h1>
+                    <h3>
+                        <%= item.tipo %>
+                    </h3>
+                </a>
             <% }) %> 
         </article>
     </section>

@@ -119,7 +119,7 @@ article#lista {
     margin: 0 20rem 3rem 20rem;
 }
 
-div.card {
+a.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,7 +130,19 @@ div.card {
     padding: 1rem;
     text-decoration: none;
     padding: 2rem;
-    display: flex;
     color: #ffffff;
     background-color: #211103;
+}
+.detalhes {
+    display: flex;
+    justify-content: center;
+}
+
+.infocerveja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem;
 }

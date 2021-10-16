@@ -26,24 +26,22 @@
     <section class="detalhes">
         <img src="<%=  %>">
         <div class="info-cerveja">
-            <ul>
-                <li>
-                    Tipo
-                    <spam><%= cerveja.tipo %></spam>
-                </li>
-                <li>
-                    IBU
-                    <spam><%= cerveja.ibu %></spam>
-                </li>
-                <li>
-                    Teor alcoólico
-                    <spam><%= cerveja.teoralcoolico %></spam>
-                </li>
-                <li>
-                    Fabricante
-                    <spam><%= cerveja.fabricante %></spam>
-                </li>
-            </ul>
+            <a>
+                Tipo:
+                <spam><%= cerveja.tipo %></spam>
+            </a>
+            <a>
+                IBU:
+                <spam><%= cerveja.ibu %></spam>
+            </a>
+            <a>
+                Teor alcoólico:
+                <spam><%= cerveja.teoralcoolico %></spam>
+            </a>
+            <a>
+                Fabricante:
+                <spam><%= cerveja.fabricante %></spam>
+            </a>
             <div class="botoes-detalhes">
                 <a href="/editar/<%= cerveja.id %>">  
                     <button>Editar</button>
