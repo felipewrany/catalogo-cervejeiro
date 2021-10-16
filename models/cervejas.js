@@ -9,24 +9,21 @@ const Cerveja = database.define("cervejas", {
     primaryKey: true,
   },
   nome: {
-    type: Sequelize.STRING,
-    allowNull: false,
+    type: Sequelize.STRING
+    
   },
   tipo: {
-    type: Sequelize.STRING,
-    allowNull: false,
+    type: Sequelize.STRING
+    
   },
   ibu: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
+    type: Sequelize.INTEGER
   },
   teoralcoolico: {
-    type: Sequelize.DECIMAL,
-    allowNull: false,
+    type: Sequelize.DECIMAL
   },
   fabricante: {
-    type: Sequelize.STRING,
-    allowNull: false,
+    type: Sequelize.STRING
   },
 },
 {

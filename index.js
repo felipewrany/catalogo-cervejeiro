@@ -70,10 +70,8 @@ app.post("/editar/:id", async (req, res) => {
 
   const cervejaEditada = await cerveja.save();
 
-  res.render("index", {
-    cerveja: cervejaEditada
+  res.redirect("/");  
 
-  });
 });
 
 app.post("/deletar/:id", async (req, res) => {  
