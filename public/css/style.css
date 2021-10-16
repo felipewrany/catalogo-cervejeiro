@@ -67,7 +67,7 @@ body {
 }
 
 .header h3{
-    color: black;
+    color: #7b0d1e;
     font-size:3rem;
     font-family: 'Bebas Neue', cursive
 }
@@ -132,6 +132,7 @@ a.card {
     padding: 2rem;
     color: #ffffff;
     background-color: #211103;
+    text-align: center;
 }
 
 .detalhes {
