@@ -19,15 +19,15 @@
                 <a href="/sobre">Sobre</a>
             </div>
         </nav>
-        <div id="header-editar">
+        <div class="header">
             <h1>Editar</h1>
         </div>
     </header>
-    <section id="editar">
+    <section class="form-beer">
         <form action="/editar/<%= cerveja.id%>" method="POST">
             <div>
                 <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" value="<%= cerveja.nome %> required>
+                <input type="text" name="nome" id="nome" value="<%= cerveja.nome %>" required>
             </div>
             <div>
                 <label for="tipo">Tipo: </label>
@@ -46,11 +46,11 @@
             </div>
             <div>
                 <label for="teor alcoolico">Teor alcoólico: </label>
-                <input type="text" name="teor alcoolico" id="teor alcoolico" value="<%= cerveja.teoralcoolico %> required>
+                <input type="text" name="teor alcoolico" id="teor alcoolico" value="<%= cerveja.teoralcoolico %>" required>
             </div>
             <div>
                 <label for="fabricante">Fabricante: </label>
-                <input type="text" name="fabricante" id="fabricante" value="<%= cerveja.fabricante %> required>
+                <input type="text" name="fabricante" id="fabricante" value="<%= cerveja.fabricante %>" required>
             </div>
             <button type="submit">Editar</button>
         </form>

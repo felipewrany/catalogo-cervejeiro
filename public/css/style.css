@@ -49,19 +49,19 @@ body {
     min-height: 100vh;
 }
 
-div#header-cadastro {
+.header {
     padding-top: 7rem;
     padding-bottom: 3rem;
 }
 
-div#header-cadastro h1 {
+.header h1 {
     color: #ce4b27;
     font-size: 4rem;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
 
-section#cadastro {
+.form-beer {
     padding: 3rem;
     display: flex;
     justify-content: center;
@@ -75,12 +75,12 @@ section#cadastro {
     /* border-radius: 1rem; */
 }
 
-section#cadastro form {
+.form-beer form {
     width: 100%;
     padding: 3rem;
 }
 
-section#cadastro form div input {
+.form-beer form div input {
     width: 100%;
     padding: 1rem;
     font-size: 1.3rem;
@@ -90,7 +90,7 @@ section#cadastro form div input {
     /* border: 0.1rem solid #ccc; */
 }
 
-section#cadastro form div select {
+.form-beer form div select {
     width: 100%;
     padding: 1rem;
     font-size: 1.3rem;
