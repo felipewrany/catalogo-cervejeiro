@@ -110,6 +110,19 @@ body {
     outline: none;
     /* border: 0.1rem solid #ccc; */
 }
+.form-beer button {
+    color: #ce4b27;
+    background-color: #dcc48e;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.form-beer button:hover {
+    color:#dcc48e;
+    background-color: #ce4b27;
+}
 
 article#lista {
     display: flex;
@@ -176,6 +189,19 @@ a.card:hover {
 .botoes-detalhes {
     display: flex;
     justify-content: space-evenly;
+}
+.botoes-detalhes button {
+    color: #ce4b27;
+    background-color: #dcc48e;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.botoes-detalhes button:hover {
+    color:#dcc48e;
+    background-color: #ce4b27;
 }
 
 .infocerveja {
