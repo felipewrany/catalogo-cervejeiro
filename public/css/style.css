@@ -133,9 +133,17 @@ a.card {
     color: #ffffff;
     background-color: #211103;
 }
+
 .detalhes {
+    margin: 0 20rem 0 20rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #211103;
+    color: #ffffff;
+    border-radius: 1rem;
+    padding: 3rem;
 }
 
 .infocerveja {
