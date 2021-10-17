@@ -164,7 +164,6 @@ a.card:hover {
     justify-content: space-evenly;
     align-items: center;
     background-color: #211103;
-    color: #ffffff;
     font-size: 2rem;
     border-radius: 1rem;
     padding: 3rem;
@@ -179,11 +178,13 @@ a.card:hover {
     font-weight: bold;
     text-align: left;
     padding-top: 1.3rem;
+    color: #ffffff;
 }
 
 .info-cerveja div spam {
     text-transform: capitalize;
     font-weight: lighter;
+    color: #ce4b27;
 }
 
 .botoes-detalhes {
