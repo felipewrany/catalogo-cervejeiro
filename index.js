@@ -52,14 +52,15 @@ app.get("/sobre", (req, res) => {
 });
 
 app.post("/cadastro", async (req, res) => {
-    const { nome, tipo, ibu, teoralcoolico, fabricante } = req.body;
+    const { nome, tipo, ibu, teoralcoolico, fabricante, descricao } = req.body;
     
     const cerveja = await Cerveja.create({
       nome,
       tipo,
       ibu,
       teoralcoolico,
-      fabricante
+      fabricante,
+      descricao
     });
     message="Cerveja cadastrada com sucesso!";
     res.redirect("/");
