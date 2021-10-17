@@ -30,6 +30,10 @@ const Cerveja = database.define("cervejas", {
     type: Sequelize.STRING,
     allowNull: false
   },
+  descricao: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
 },
 {
   freezeTableName: true,
