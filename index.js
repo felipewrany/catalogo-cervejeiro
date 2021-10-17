@@ -69,13 +69,14 @@ app.post("/cadastro", async (req, res) => {
 app.post("/editar/:id", async (req, res) => {
   const cerveja = await Cerveja.findByPk(req.params.id);
 
-  const { nome, tipo, ibu, teoralcoolico, fabricante } = req.body;
+  const { nome, tipo, ibu, teoralcoolico, fabricante, descricao } = req.body;
 
   cerveja.nome = nome;
   cerveja.tipo = tipo;
   cerveja.ibu = ibu;
   cerveja.teoralcoolico = teoralcoolico;
   cerveja.fabricante = fabricante;
+  cerveja.descricao = descricao;
 
   const cervejaEditada = await cerveja.save();
   message="Cerveja editada com sucesso!";
