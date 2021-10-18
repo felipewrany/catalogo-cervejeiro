@@ -51,8 +51,8 @@ app.get("/detalhes/:id", async (req, res) => {
   });
 });
 
-app.get("/sobre", (req, res) => {
-    res.render("sobre");
+app.get("/quem-somos", (req, res) => {
+    res.render("quem-somos");
 });
 
 app.post("/cadastro", async (req, res) => {
