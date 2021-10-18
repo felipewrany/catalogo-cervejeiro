@@ -32,13 +32,13 @@
             </div>
             <div>
                 <label for="tipo">Tipo: </label>
-                <select name="tipo" value="<%= cerveja.tipo %>" required>
-                    <option value="IPA">IPA</option>
-                    <option value="Lager">Lager</option>
-                    <option value="Weiss">Weiss</option>
-                    <option value="Ale">Ale</option>
-                    <option value="Pilsen">Pilsen</option>
-                    <option value="Outro">Outro</option>
+                <select name="tipo" required>
+                    <option value="IPA" <% if (cerveja.tipo=="IPA"){%>selected<%}%>>IPA</option>
+                    <option value="Lager" <% if (cerveja.tipo=="Lager"){%>selected<%}%>>Lager</option>
+                    <option value="Weiss" <% if (cerveja.tipo=="Weiss"){%>selected<%}%>>Weiss</option>
+                    <option value="Ale" <% if (cerveja.tipo=="Ale"){%>selected<%}%>>Ale</option>
+                    <option value="Pilsen" <% if (cerveja.tipo=="Pilsen"){%>selected<%}%>>Pilsen</option>
+                    <option value="Outro" <% if (cerveja.tipo=="Outro"){%>selected<%}%>>Outro</option>
                   </select>
             </div>
             <div>
