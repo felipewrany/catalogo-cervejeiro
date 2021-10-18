@@ -15,7 +15,11 @@ let message = "";
 const Cerveja = require("./models/cervejas");
 
 app.get("/", async (req, res) => {
-    const cervejas = await Cerveja.findAll();
+    const cervejas = await Cerveja.findAll({
+      order:[
+        ['id','ASC']
+      ]
+    });
     setTimeout(() => {
       message = "";
     }, 500);

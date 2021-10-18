@@ -12,6 +12,7 @@
         <nav>
             <div class="nav-left">
                 <a href="/" class="nav-logo">CATÁLOGO CERVEJEIRO</a>
+                <img src="/img/LOGO.png">
             </div>
             <div class="nav-right">
                 <a href="/">Home</a> 
@@ -25,6 +26,7 @@
         </div>
     </header>
     <section class="detalhes">
+        <section id="cerveja">
         <% if(cerveja.tipo == "IPA") {  %>
             <img src=/img/IPA.png>
         <% } else if(cerveja.tipo == "Ale") {  %>
@@ -38,6 +40,10 @@
         <% } else if(cerveja.tipo == "Outro") { %>
             <img src=/img/Outro.png>
         <% } %>
+        <div>
+            <spam><%= cerveja.descricao %></spam>
+        </div>
+    </section>
         <div class="info-cerveja">
             <div>
                 Tipo
@@ -54,9 +60,6 @@
             <div>
                 Fabricante
                 <spam><%= cerveja.fabricante %></spam>
-            </div>
-            <div>
-                <spam><%= cerveja.descricao %></spam>
             </div>
             <div class="botoes-detalhes">
                 <a href="/editar/<%= cerveja.id %>">  

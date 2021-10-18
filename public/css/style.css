@@ -19,7 +19,7 @@ nav {
 .nav-left {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
 .nav-left a {
@@ -27,6 +27,11 @@ nav {
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
+}
+
+.nav-left img {
+    width: 3rem;
+    padding-left: 1rem;
 }
 
 .nav-right {
@@ -70,6 +75,9 @@ body {
     color: #7b0d1e;
     font-size:3rem;
     font-family: 'Bebas Neue', cursive
+}
+.header img {
+    width: 15rem;
 }
 
 .form-beer {
@@ -166,10 +174,20 @@ a.card:hover {
     font-size: 2rem;
     border-radius: 1rem;
     padding: 3rem;
-    text-align: center
+    text-align: center;
+    margin-bottom: 3rem;
 }
 .detalhes img {
     width: 15rem;
+}
+#cerveja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dcc48e;
+    font-size: 1rem;
+    padding-right: 3rem;
+
 }
 
 .info-cerveja div {
