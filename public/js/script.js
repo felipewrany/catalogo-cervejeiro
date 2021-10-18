@@ -8,3 +8,8 @@ closeMessage.addEventListener("click", function (){
 setTimeout(() => {
     message.style.display = "none"
 }, 5000)
+
+// function confirmar() {
+//     return confirm("Tem certeza que quer deletar essa cerveja?");
+//   }
+//por algum motivo essa função não funcionou, mas esse mesmo comando no html funciona ¯\_(ツ)_/¯

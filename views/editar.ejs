@@ -57,7 +57,7 @@
                 <label for="descricao">Descrição: </label>
                 <input type="text" name="descricao" id="descricao" value="<%= cerveja.descricao %>" required>
             </div>
-            <button type="submit">Editar</button>
+            <button type="submit" onclick="return confirm('Tem certeza que quer editar essa cerveja?');">Editar</button>
         </form>
     </section>
     <script src="/js/script.js"></script>
