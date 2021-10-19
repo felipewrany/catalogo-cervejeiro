@@ -262,3 +262,33 @@ section#message {
     color: rgb(255, 0, 0);
     transform: scale(1.5);
   }
+
+section.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2rem;
+    margin: 0 20rem 3rem 20rem;
+    padding-top: 15rem;
+}
+
+.card-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    border: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: transform 0.5s;
+    padding: 2rem;
+    color: #ffffff;
+    background-color: #211103;
+    text-align: center;
+}
+
+.card-info img {
+    border-radius: 50%;
+    width: 10rem;
+}
