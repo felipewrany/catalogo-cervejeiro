@@ -138,7 +138,7 @@ article#lista {
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 2rem;
-    margin: 0 20rem 3rem 20rem;
+    margin: 0 10% 3rem 10%;
 }
 
 a.card {
