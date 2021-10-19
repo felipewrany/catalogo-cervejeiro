@@ -87,7 +87,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #3d1308;
-    margin: 0 20rem 10rem 20rem;
+    margin: 0 15% 10rem 15%;
     box-shadow: 0 0 1rem #00000060;
     color: #ce4b27;
     font-weight: bold;
@@ -138,7 +138,7 @@ article#lista {
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 2rem;
-    margin: 0 10% 3rem 10%;
+    margin: 0 15% 3rem 15%;
 }
 
 a.card {
@@ -166,7 +166,7 @@ a.card:hover {
 }
 
 .detalhes {
-    margin: 0 20rem 0 20rem;
+    margin: 0 10% 0 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -179,7 +179,7 @@ a.card:hover {
     margin-bottom: 3rem;
 }
 .detalhes img {
-    width: 15rem;
+    width: 60%;
 }
 #cerveja {
     display: flex;
