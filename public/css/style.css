@@ -174,7 +174,7 @@ a.card:hover {
     background-color: #211103;
     font-size: 2rem;
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 5%;
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -187,7 +187,7 @@ a.card:hover {
     align-items: center;
     color: #dcc48e;
     font-size: 1rem;
-    padding-right: 3rem;
+    padding-right: 5%;
 
 }
 
@@ -207,6 +207,7 @@ a.card:hover {
 
 .botoes-detalhes {
     display: flex;
+    flex-shrink: 5;
     justify-content: space-evenly;
 }
 .botoes-detalhes button {
@@ -227,11 +228,12 @@ a.card:hover {
 
 .infocerveja {
     display: flex;
+    flex-shrink: 5;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 2rem
+    padding: 10%;
 }
 
 section#message {
