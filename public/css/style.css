@@ -267,9 +267,12 @@ section.about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction:row;
     row-gap: 2rem;
-    margin: 0 20rem 3rem 20rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
+    width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-about {
@@ -282,13 +285,24 @@ section.about {
     border-radius: 1rem;
     text-decoration: none;
     transition: transform 0.5s;
-    padding: 2rem;
+    padding: 3rem;
     color: #ffffff;
     background-color: #211103;
     text-align: center;
+}
+.card-info {
+    width: 60rem;
 }
 
 .card-info img {
     border-radius: 50%;
     width: 10rem;
+}
+
+.card-info h2 {
+    margin: 0.5rem;
+}
+
+.card-social a img {
+    margin: 0.5rem;
 }
