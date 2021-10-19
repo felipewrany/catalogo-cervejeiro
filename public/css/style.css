@@ -157,6 +157,15 @@ a.card {
     text-align: center;
 }
 
+a.car h1 {
+    font-weight: bold;
+}
+
+a.car h2 {
+    font-weight: lighter;
+    color: #ce4b27;
+}
+
 a.card:hover {
     transform: scale(1.1);
 }
