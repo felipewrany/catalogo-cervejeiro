@@ -284,7 +284,6 @@ section.about {
     border: 1rem;
     border-radius: 1rem;
     text-decoration: none;
-    transition: transform 0.5s;
     padding: 3rem;
     color: #ffffff;
     background-color: #211103;
@@ -301,6 +300,10 @@ section.about {
 
 .card-info h2 {
     margin: 0.5rem;
+}
+
+.card-social a {
+    text-decoration: none;
 }
 
 .card-social a img {
