@@ -11,12 +11,10 @@ const Cerveja = database.define("cervejas", {
   nome: {
     type: Sequelize.STRING,
     allowNull: false
-    
   },
   tipo: {
     type: Sequelize.STRING,
     allowNull: false
-    
   },
   ibu: {
     type: Sequelize.INTEGER,

@@ -57,7 +57,7 @@ app.get("/quem-somos", (req, res) => {
 
 app.post("/cadastro", async (req, res) => {
     const { nome, tipo, ibu, teoralcoolico, fabricante, descricao } = req.body;
-    
+  try{  
     const cerveja = await Cerveja.create({
       nome,
       tipo,
@@ -67,6 +67,11 @@ app.post("/cadastro", async (req, res) => {
       descricao
     });
     message="Cerveja cadastrada com sucesso!";
+  } catch (err) {
+    console.log(err)
+    message="Erro ao cadastrar!";
+  }
+    
     res.redirect("/");
 });
 
