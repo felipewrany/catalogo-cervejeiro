@@ -1,322 +1,322 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@500&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: lighter;
 }
 
 nav {
-    background-color: #3d1308;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    top: 0;
+  background-color: #3d1308;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
 }
 
 .nav-left {
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
 }
 
 .nav-left a {
-    color: #dcc48e;
-    text-decoration: none;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
+  color: #dcc48e;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
 }
 
 .nav-left img {
-    width: 3rem;
-    padding-left: 1rem;
+  width: 3rem;
+  padding-left: 1rem;
 }
 
 .nav-right {
-    display: flex;
-    padding: 1rem;
-    gap: 0.5rem 1rem;
+  display: flex;
+  padding: 1rem;
+  gap: 0.5rem 1rem;
 }
 
 .nav-right a {
-    text-decoration: none;
-    color: #ce4b27;
+  text-decoration: none;
+  color: #ce4b27;
 }
 .nav-right a:hover {
-    color: #dcc48e;
+  color: #dcc48e;
 }
 
 body {
-    background-color: #dcc48e;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-color: #dcc48e;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .header {
-    padding-top: 7rem;
-    padding-bottom: 3rem;
-    color: #ce4b27;
-    font-size: 4rem;
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  color: #ce4b27;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
 
-.header h1{
-    color: #ce4b27;
-    font-size: 4rem;
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
+.header h1 {
+  color: #ce4b27;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
 
-.header h3{
-    color: #7b0d1e;
-    font-size:3rem;
-    font-family: 'Bebas Neue', cursive
+.header h3 {
+  color: #7b0d1e;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', cursive;
 }
 .header img {
-    width: 15rem;
+  width: 15rem;
 }
 
 .form-beer {
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #3d1308;
-    margin: 0 15% 10rem 15%;
-    box-shadow: 0 0 1rem #00000060;
-    color: #ce4b27;
-    font-weight: bold;
-    font-size: large;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #3d1308;
+  margin: 0 15% 10rem 15%;
+  box-shadow: 0 0 1rem #00000060;
+  color: #ce4b27;
+  font-weight: bold;
+  font-size: large;
 }
 
 .form-beer form {
-    width: 100%;
-    padding: 3rem;
+  width: 100%;
+  padding: 3rem;
 }
 
 .form-beer form div input {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    outline: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
 }
 
 .form-beer form div select {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    outline: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  outline: none;
 }
 
 .form-beer button {
-    color: #ce4b27;
-    background-color: #dcc48e;
-    font-size: medium;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    border-style: none;
+  color: #ce4b27;
+  background-color: #dcc48e;
+  font-size: medium;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-style: none;
 }
 
 .form-beer button:hover {
-    color:#dcc48e;
-    background-color: #ce4b27;
+  color: #dcc48e;
+  background-color: #ce4b27;
 }
 
 article#lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 2rem;
-    margin: 0 15% 3rem 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 2rem;
+  margin: 0 15% 3rem 15%;
 }
 
 a.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    border: 1rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    transition: transform 0.5s;
-    padding: 2rem;
-    color: #ffffff;
-    background-color: #211103;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  border: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: transform 0.5s;
+  padding: 2rem;
+  color: #ffffff;
+  background-color: #211103;
+  text-align: center;
 }
 
 a.card h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a.card h3 {
-    font-weight: lighter;
-    color: #ce4b27;
+  font-weight: lighter;
+  color: #ce4b27;
 }
 
 a.card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card img {
-    width: 6rem;
+  width: 6rem;
 }
 
 .detalhes {
-    margin: 0 10% 0 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #211103;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    padding: 5%;
-    text-align: center;
-    margin-bottom: 3rem;
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #211103;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 5%;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 .detalhes img {
-    width: 30%;
+  width: 30%;
 }
 #cerveja {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #dcc48e;
-    font-size: 1rem;
-    padding-right: 5%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #dcc48e;
+  font-size: 1rem;
+  padding-right: 5%;
 }
 
 .info-cerveja div {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: left;
-    padding-top: 1.3rem;
-    color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 1.3rem;
+  color: #ffffff;
 }
 
 .info-cerveja div spam {
-    text-transform: capitalize;
-    font-weight: lighter;
-    color: #ce4b27;
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: #ce4b27;
 }
 
 .botoes-detalhes {
-    display: flex;
-    flex-shrink: 5;
-    justify-content: space-evenly;
+  display: flex;
+  flex-shrink: 5;
+  justify-content: space-evenly;
 }
 .botoes-detalhes button {
-    color: #ce4b27;
-    background-color: #dcc48e;
-    font-size: medium;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    border-style: none;
+  color: #ce4b27;
+  background-color: #dcc48e;
+  font-size: medium;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-style: none;
 }
 
 .botoes-detalhes button:hover {
-    color:#dcc48e;
-    background-color: #ce4b27;
+  color: #dcc48e;
+  background-color: #ce4b27;
 }
 
 .infocerveja {
-    display: flex;
-    flex-shrink: 5;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10%;
+  display: flex;
+  flex-shrink: 5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10%;
 }
 
 section#message {
-    padding: 0.6rem;
-    background-color: #ce4b27;
-    color: #ffffff;
-    position: fixed;
-    top: 3rem;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  span#close {
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: .3s;
-  }
-  
-  span#close:hover{
-    color: rgb(255, 0, 0);
-    transform: scale(1.5);
-  }
+  padding: 0.6rem;
+  background-color: #ce4b27;
+  color: #ffffff;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+span#close:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}
 
 section.about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction:row;
-    row-gap: 2rem;
-    padding-top: 10rem;
-    width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  row-gap: 2rem;
+  padding-top: 10rem;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    border: 1rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    padding: 3rem;
-    color: #ffffff;
-    background-color: #211103;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  border: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  padding: 3rem;
+  color: #ffffff;
+  background-color: #211103;
+  text-align: center;
 }
 .card-info {
-    width: 60rem;
+  width: 60rem;
 }
 
 .card-info img {
-    border-radius: 50%;
-    width: 10rem;
+  border-radius: 50%;
+  width: 10rem;
+  border: 3px solid black;
 }
 
 .card-info h2 {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .card-social a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .card-social a img {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
